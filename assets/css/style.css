@@ -1,0 +1,99 @@
+/* Show it is fixed to the top */
+body{
+	font-family: Trebuchet MS, sans-serif;
+	min-height: 75rem;
+	padding-top: 4.5rem;
+}
+
+.navbar .navbar-nav .active>.nav-link, .navbar .navbar-nav .nav-link.active, .navbar .navbar-nav .nav-link.show, .navbar .navbar-nav .show>.nav-link{
+    color: #010101;
+	font-size: 25px;
+	
+}
+.navbar .navbar-nav .nav-link{
+    color: #1e1e1e;
+	font-size: 25px;
+}
+.nav-height-122{
+	height: 122px;
+}
+.navbar{
+	background: #fbf7f7;
+//	opacity: 70%;
+}
+.left{
+	text-align: left;
+}
+.right{
+	text-align: right;
+}
+.center{
+	text-align: center;
+}
+.spacer-200{
+	height: 200px;
+}
+.spacer-44{
+	height: 44px;
+}
+.spacer-19{
+	height: 19px;
+}
+.spacer-10{
+	height: 10px;
+}
+.margin-left{
+	margin-left: 10px;
+}
+
+/* nested list css */
+ol {
+  list-style-type: none;
+  counter-reset: item;
+  margin: 0;
+  padding: 0;
+}
+
+ol > li {
+  display: table;
+  counter-increment: item;
+  //margin-bottom: 0.6em;
+}
+
+ol > li:before {
+ // content: counters(item, ".") ". ";
+  display: table-cell;
+  padding-right: 0.4em;    
+}
+
+li ol > li {
+  margin: 0;
+}
+
+li ol > li:before {
+  content: counters(item, ".") " ";
+}
+/* nested list css */
+
+.showroom{
+ // padding: 20px;
+  width: 100%;
+  //height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
