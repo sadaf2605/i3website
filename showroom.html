@@ -13,6 +13,12 @@
 		<!-- Bootstrap core CSS -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 		
+		<!-- Bootstrap core JS -->
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+		
 		<!-- Favicons -->
 		<link rel="icon" href="assets/images/logo.png" sizes="32x32" type="image/png">
 		<link rel="apple-touch-icon" href="assets/images/logo.png" sizes="180x180">
@@ -47,13 +53,13 @@
 		  }
 		</style>
 		
-		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		
+		<!-- Custom CSS for this template -->
+		<link href="assets/css/style.css" rel="stylesheet">
 
-		<!-- Custom styles for this template -->
-		<link rel="stylesheet" href="justifiedGallery.css" />
-		<script src="jquery.justifiedGallery.js"></script>
+		<!-- JS and CSS for this justifiedGallery -->
+		<link rel="stylesheet" href="assets/css/justifiedGallery.css" />
+		<script src="assets/js/jquery.justifiedGallery.js"></script>
 		
 		
 
@@ -86,51 +92,40 @@
 		</nav>
 		<div class="spacer-44"></div>
 		
-		<main role="main" class="container">
-			
+		<main role="main" class="container">			
 			<div class='row'>
-				<div class='col-6'>
+				
+				<div class='col-md-6 order-1'>
 					<img class='showroom' src="assets/images/showroom-img-1.png" alt="showroom-img-1" >
+				</div>								
+			
+				<!--------------------------------------------------->				
+				<div class='col-md-6 order-2'>
+					<div id="mygallery" >
+						<a href="path/to/myimage1_original.jpg">
+							<img alt="Image 1" src="assets/images/showroom-img-2.png"/>
+						</a>
+						<a href="path/to/myimage2_original.jpg">
+							<img alt="Image 2" src="assets/images/showroom-img-3.png"/>
+						</a>
+						<a href="path/to/myimage1_original.jpg">
+							<img alt="Image 3" src="assets/images/showroom-img-4.png"/>
+						</a>
+						<a href="path/to/myimage2_original.jpg">
+							<img alt="Image 4" src="assets/images/showroom-img-5.png"/>
+						</a>
+						<a href="path/to/myimage1_original.jpg">
+							<img alt="Image 5" src="assets/images/showroom-img-6.png"/>
+						</a>
+						<a href="path/to/myimage2_original.jpg">
+							<img alt="Image 6" src="assets/images/showroom-img-7.png"/>
+						</a>
+					</div>
 				</div>
-				
-					
-				
-				<!--------------------------------------------------->
-				
-				
-
-				<div class='col-6'>
-				<div id="mygallery" >
-					<a href="path/to/myimage1_original.jpg">
-						<img alt="Title 1" src="assets/images/showroom-img-2.png"/>
-					</a>
-					<a href="path/to/myimage2_original.jpg">
-						<img alt="Title 2" src="assets/images/showroom-img-3.png"/>
-					</a>
-					<a href="path/to/myimage1_original.jpg">
-						<img alt="Title 1" src="assets/images/showroom-img-4.png"/>
-					</a>
-					<a href="path/to/myimage2_original.jpg">
-						<img alt="Title 2" src="assets/images/showroom-img-5.png"/>
-					</a>
-					<a href="path/to/myimage1_original.jpg">
-						<img alt="Title 1" src="assets/images/showroom-img-6.png"/>
-					</a>
-					<a href="path/to/myimage2_original.jpg">
-						<img alt="Title 2" src="assets/images/showroom-img-7.png"/>
-					</a>
-					<!-- other images... -->
-				</div>
-				
-					
-				
-				</div>
-			</div>
-				
+			</div>			
 		</main>
 		
-		<script>
-			$("#mygallery").justifiedGallery();
-		</script>
+		<script type="text/javascript" src="assets/js/script.js"></script>
+		
 	</body>
 </html>
