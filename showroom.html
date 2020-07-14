@@ -47,8 +47,15 @@
 		  }
 		</style>
 		
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
 		<!-- Custom styles for this template -->
-		<link href="assets/css/style.css" rel="stylesheet">
+		<link rel="stylesheet" href="justifiedGallery.css" />
+		<script src="jquery.justifiedGallery.js"></script>
+		
+		
 
 		
 	</head>
@@ -86,43 +93,44 @@
 					<img class='showroom' src="assets/images/showroom-img-1.png" alt="showroom-img-1" >
 				</div>
 				
+					
+				
 				<!--------------------------------------------------->
+				
+				
 
 				<div class='col-6'>
-					<div class='row'>
-						<div class='col-6'>
-							<img src="assets/images/showroom-img-2.png" alt="showroom-img-2">
-						</div>
-						<div class='col-6'>
-							<img src="assets/images/showroom-img-3.png" alt="showroom-img-3">
-						</div>
-					</div>
-					<div class='spacer-10'></div>
+				<div id="mygallery" >
+					<a href="path/to/myimage1_original.jpg">
+						<img alt="Title 1" src="assets/images/showroom-img-2.png"/>
+					</a>
+					<a href="path/to/myimage2_original.jpg">
+						<img alt="Title 2" src="assets/images/showroom-img-3.png"/>
+					</a>
+					<a href="path/to/myimage1_original.jpg">
+						<img alt="Title 1" src="assets/images/showroom-img-4.png"/>
+					</a>
+					<a href="path/to/myimage2_original.jpg">
+						<img alt="Title 2" src="assets/images/showroom-img-5.png"/>
+					</a>
+					<a href="path/to/myimage1_original.jpg">
+						<img alt="Title 1" src="assets/images/showroom-img-6.png"/>
+					</a>
+					<a href="path/to/myimage2_original.jpg">
+						<img alt="Title 2" src="assets/images/showroom-img-7.png"/>
+					</a>
+					<!-- other images... -->
+				</div>
+				
 					
-					<div class='row'>				
-						<div class='col-6'>
-							<img src="assets/images/showroom-img-4.png" alt="showroom-img-4">
-						</div>
-						<div class='col-6'>
-							<img src="assets/images/showroom-img-5.png" alt="showroom-img-5">
-						</div>
-					</div>
-					<div class='spacer-10'></div>
-					
-					<div class='row'>				
-						<div class='col-6'>
-							<img src="assets/images/showroom-img-6.png" alt="showroom-img-6">
-						</div>
-						<div class='col-6'>
-							<img src="assets/images/showroom-img-7.png" alt="showroom-img-7">
-						</div>
-					</div>
 				
 				</div>
 			</div>
 				
 		</main>
 		
-		
+		<script>
+			$("#mygallery").justifiedGallery();
+		</script>
 	</body>
 </html>
