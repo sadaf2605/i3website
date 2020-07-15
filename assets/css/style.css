@@ -46,46 +46,32 @@ body{
 	margin-left: 10px;
 }
 
-/* nested list css */
-ol {
-  list-style-type: none;
-  counter-reset: item;
-  margin: 0;
-  padding: 0;
-}
-
-ol > li {
-  display: table;
-  counter-increment: item;
-  //margin-bottom: 0.6em;
-}
-
-ol > li:before {
- // content: counters(item, ".") ". ";
-  display: table-cell;
-  padding-right: 0.4em;    
-}
-
-li ol > li {
-  margin: 0;
-}
-
-li ol > li:before {
-  content: counters(item, ".") " ";
-}
-/* nested list css */
-
 .showroom{
  // padding: 20px;
   width: 100%;
   //height: auto;
 }
 
+#desktop-only, #desktop-only-md{
+	display: block;
+}
+
+#mobile-only, #mobile-only-md{
+	display: none;
+}
 
 
+@media screen and (max-width: 992px) {
 
+	#desktop-only{display: none;}
+	#mobile-only{display: block;}
+}
 
+@media screen and (max-width: 767px) {
 
+	#desktop-only-md{display: none;}
+	#mobile-only-md{display: block;}
+}
 
 
 
