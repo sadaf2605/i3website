@@ -54,8 +54,11 @@
 		</style>
 		
 		
-		<!-- Custom CSS for this template -->
+		<!-- Custom CSS for this project -->
 		<link href="assets/css/style.css" rel="stylesheet">
+		
+		<!-- Custom CSS for picEyes -->
+		<link href="assets/css/picEyes.css" rel="stylesheet">
 
 		<!-- JS and CSS for this justifiedGallery -->
 		<link rel="stylesheet" href="assets/css/justifiedGallery.css" />
@@ -107,7 +110,7 @@
 			
 				<!--------------------------------------------------->				
 				<div class='col-md-6 order-2'>
-					<div id="mygallery" >
+					<!--------<div id="mygallery" >
 						<a href="path/to/myimage1_original.jpg">
 							<img alt="Image 1" src="assets/images/showroom-img-2.png"/>
 						</a>
@@ -126,12 +129,46 @@
 						<a href="path/to/myimage2_original.jpg">
 							<img alt="Image 6" src="assets/images/showroom-img-7.png"/>
 						</a>
-					</div>
+					</div>---------------------------------->
+					
+					<ul class='clearfix picEyes-demo'>
+						  <li><img src="assets/images/showroom-img-2.png"/></li>
+						  <li><img src="assets/images/showroom-img-3.png"/></li>
+						  <li><img src="assets/images/showroom-img-4.png"/></li>
+						  <li><img src="assets/images/showroom-img-5.png"/></li>
+						  <li><img src="assets/images/showroom-img-6.png"/></li>
+						  <li><img src="assets/images/showroom-img-7.png"/></li>
+					</ul>
+					
 				</div>
 			</div>			
 		</main>
 		
+		
+<script type="text/javascript">
+
+  // I don't know whether this part of code is necessary or not
+  // these are giving warning: "Some cookies are misusing the recommended “sameSite“ attribute"
+  
+ /* var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+*/
+</script>
+		
+		
 		<script type="text/javascript" src="assets/js/script.js"></script>
+		
+		<!-------- jQuery library and the jQuery picEyes plugin--------->
+		<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+		<script src="assets/js/jquery.picEyes.js"></script>
 		
 	</body>
 </html>
