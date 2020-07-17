@@ -2,5 +2,5 @@ $("#mygallery").justifiedGallery();
 	
 $(function(){
 	//picturesEyes($('li'));
-	$('li').picEyes();
+	$('.picEyes-demo li').picEyes();
 });
