@@ -1,4 +1,4 @@
-	// $("#mygallery").justifiedGallery();
+$("#mygallery").justifiedGallery();
 	
 $(function(){
 	//picturesEyes($('li'));
