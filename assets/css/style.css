@@ -3,6 +3,8 @@ body{
 	font-family: Trebuchet MS, sans-serif;
 	min-height: 75rem;
 	padding-top: 4.5rem;
+	padding-left: 2vw;
+	padding-right: 2vw;
 }
 
 img {
@@ -24,7 +26,7 @@ img {
 }
 .navbar{
 	background: #fbf7f7;
-//	opacity: 70%;
+	opacity: 70%;
 }
 .left{
 	text-align: left;
@@ -75,8 +77,8 @@ img {
 	#desktop-only{display: none;}
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px- md) {
+/* Small devices (portrait tablets and large phones, 600px and up- md) */
+@media only screen and (min-width: 600px) {
 	#mobile-only, .mobile-only{display: block;}
 	#desktop-only, .desktop-only{display: none;}  
 }
